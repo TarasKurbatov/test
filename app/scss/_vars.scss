@@ -1,0 +1,36 @@
+$dark:444444;
+$grey:#666666;
+$lblue:#81a6c3;
+$light:#d8e0e6;
+
+
+@mixin transition{
+    transition: all .3s ease;
+}
+@mixin flex{
+	  display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+@mixin flex-cc{
+	display: flex;
+  justify-content:center;
+	align-items:center;
+}
+
+@mixin flex-csb{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+@mixin after{
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  content:'';
+  width:100%;
+  height:100%;
+}

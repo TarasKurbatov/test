@@ -1,0 +1,109 @@
+@import "vars";
+
+.profile{
+	&__section{
+		padding: 40px 0;
+	}
+	&__img-load{
+		display:block;
+		margin-right:20px;
+		width:60px;
+		min-width: 60px;
+		height:60px;
+		text-align: center;
+		border-radius:50%;
+		border:1px solid #81a6c3;
+		overflow: hidden;
+		cursor:pointer;
+		&:hover{
+			.file-img{
+				color:#4a6c87;
+			}
+		}
+		.file{
+			display:none;
+		}
+		.add-img{
+			color:#81a6c3;
+			font-size:22px;
+			line-height: 60px;
+			cursor:pointer;
+		}
+	}
+	&__vide-load{
+		.file{
+			display:none;
+		}
+		span, label{
+			margin-right:4px;
+			vertical-align:middle;
+		}
+	}
+	&__add-file{
+		color:#81a6c3;
+		font-size:22px;
+		line-height: 60px;
+		cursor:pointer;
+		&:hover{
+			color:#4a6c87;
+		}
+	}
+	&__name{
+		.input{
+			display:inline-block;
+			width: 290px;
+			margin-right: 10px;
+		}
+	}
+	&__skills{
+		span{
+			display:inline-block;
+			vertical-align: middle;
+			margin-right:10px;
+			margin-bottom: 10px;
+			@include transition;
+		}
+		.title{
+			font-size: 16px;
+		}
+		.add-skill{
+			vertical-align:text-top;
+			color:#81a6c3;
+			font-size:20px;
+			&:hover{
+				color:#4a6c87;
+			}
+		}
+	}
+	&__skill-item{
+		padding:4px 10px;
+		color:#b2bcca;
+		font-size:12px;
+		border:1px solid $light;
+		border-radius: 3px;
+		cursor:pointer;
+		&:hover{
+			color:$lblue;
+			border-color:$lblue;
+		}
+		.dell-skill{
+			margin-left: 5px;
+		}
+	}
+	&__skill-list{
+		ul{
+			li{
+				display:inline-block;
+				width:48%;
+				margin-bottom:10px;
+			}
+		}
+		.profile__skill-item{
+			.dell-skill{
+				display:none;
+			}
+		}
+	}
+}
+
+
